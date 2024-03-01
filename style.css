@@ -10,3 +10,7 @@
     --cor-cbc-n-sel:rgba(82, 162, 81, 0.5);
     --cor-cbc-sel:#52A151;
 } 
+
+body{
+    background-color: var(--cor-de-fundo);
+}
