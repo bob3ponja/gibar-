@@ -27,6 +27,8 @@ body {
     margin: 0 auto;
 }
 
-.botao{
-    color: var(--cor-cbc-n-sel) ;
+.titulo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
 }
