@@ -48,7 +48,7 @@ body{
     align-items: center;
     width: 100%;
     border-bottom: 4px solid var(--cor-cbc-sel);
-    border-left: 2px solid var (--cor-cbc-sel);
+    border-left: 2px solid var(--cor-cbc-sel);
     border-right: 2px solid var(--cor-cbc-sel);
     border-top: none;
     }
