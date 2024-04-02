@@ -74,11 +74,11 @@ body{
     }
 
     .ativo{
-        background-color: var(--cor-ativa);
-        border-bottom: 4px solid var(--cor-ativado);
+        background-color: var(--cor-cbc-sel);
+        border-bottom: 4px solid var(--cor-cbc-sel);
     }
     .abas-textos{
-        background-color: var(--cor-inativo);
+        background-color: var(--cor-cbc-n-sel);
         padding: 40px;
         border-radius: 0 0 40px 40px;
     }
@@ -94,7 +94,7 @@ body{
     }
     .abas-conteudo-titulo-secundario{
         text-align: center;
-        color: var(--cor-borda);
+        color: var(--verde-limao);
         text-transform: uppercase;
     }
 
