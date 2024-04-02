@@ -18,13 +18,13 @@ body{
 }
 
 .botao {
-    background: linear-gradient(to bottom, var(--amarelo-escuro), var(--ciano));
+    background: linear-gradient(to bottom, var(cor-cbc-n-sel), var(--verde-limao));
     font-family: 'Chakra Peth', sans-serif;
     color: red;
 }
 
 .botao:hover {
-    background: linear-gradient(to top, var(--amarelo-escuro) 20%, var(--parte-cabecalho) 75%);
+    background: linear-gradient(to top, var(--cor-cbc-sel) 20%, var(--verde-limao) 75%);
     
 }
 
