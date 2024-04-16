@@ -1,33 +1,32 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
 
 :root {
-    --cor-de-fundo:#386738;
-    --preto:#000000;
-    --vermelho:#FF0000;
-    --roxo:#3A375E;
-    --verde-limao:#6FFF57;
-    --cor-cbc-n-sel:rgba(82, 162, 81, 0.5);
-    --cor-cbc-sel:#52A151;
-} 
-
-body{
-    background-color: var(--cor-de-fundo);
-    color: #FFFF;
-    font-family: 'Chakra Petch', sans-serif;
+    --cor-de-fundo:#48ff00;
+    --amarelo-escuro:#e04141;
+    --parte-cabecalho:rgba(43, 255, 0, 0.5);
+    --ciano:rgba(24, 8, 245, 0.86);
+    --cor-relogio:rgb(7, 73, 214);
+    --cor-dia-hora:rgb(255, 251, 0);
 }
 
+body {
+    background: var(--cor-de-fundo);
+    margin: 0;
+    height: 100vh;
+  }
+
 .botao {
-    background: linear-gradient(to bottom, var(cor-cbc-n-sel), var(--verde-limao));
+    background: var(--amarelo-escuro);
     font-family: 'Chakra Peth', sans-serif;
     color: red;
 }
 
 .botao:hover {
-    background: linear-gradient(to top, var(--cor-cbc-sel) 20%, var(--verde-limao) 75%);
+    background: var(--ciano);
     
 }
-
 
 .conteudo-principal {
     display: flex;
@@ -39,19 +38,18 @@ body{
     margin: 0 auto;
 }
 
-.titulo-principal{
+.titulo-principal {
     text-align: left;
     width: 100%;
     font-size: 32px;
 }
 
-.titulo-principal span{
-    color: var(--verde-limao);
+.titulo-principal span {
+    background: #49ff38;
 }
 
 .botao{
     font-family: 'Chakra Petch', sans-serif;
-    background-color: var(--cor-cbc-n-sel);
     color: #FFFF;
     display: flex;
     justify-content: center;
@@ -59,9 +57,9 @@ body{
     font-size: 18px;
     align-items: center;
     width: 100%;
-    border-bottom: 4px solid var(--cor-cbc-sel);
-    border-left: 2px solid var(--cor-cbc-sel);
-    border-right: 2px solid var(--cor-cbc-sel);
+    border-bottom: 4px solid var(--amarelo-escuro);
+    border-left: 2px solid var(--amarelo-escuro);
+    border-right: 2px solid var(--amarelo-escuro);
     border-top: none;
     }
    
@@ -74,29 +72,31 @@ body{
     }
 
     .ativo{
-        background-color: var(--cor-cbc-sel);
-        border-bottom: 4px solid var(--cor-cbc-sel);
-    }
-    .abas-textos{
-        background-color: var(--cor-cbc-n-sel);
+         background-color: var(--botao-ativo);
+          border-bottom: 4px solid var(--verde);
+        }
+
+        .abas-textos{
+        background-color: var(--cor-de-fundo);
         padding: 40px;
-        border-radius: 0 0 40px 40px;
-    }
-    .abas-conteudo-ativo{
+        border-radius: 00 40px 40px;
+        }
+        .aba-conteudo.ativo{
         display: block;
-    }
-    .abas-conteudo{
+        }
+        .aba-conteudo{
         display: none;
-    }
-    .abas-conteudo-titulo-principal{
+        }
+        .aba-conteudo-titulo-principal{
         font-size: 28px;
         text-align: center;
-    }
-    .abas-conteudo-titulo-secundario{
+        }
+        .aba-conteudo-titulo-secundario{
         text-align: center;
-        color: var(--verde-limao);
+        color: var(--rosa);
         text-transform: uppercase;
-    }
+        }
+
 
 @media screen and (min-width: 768px) {
     .botoes{
@@ -111,7 +111,6 @@ body{
     border-radius: 0 40px 0 0;
     }
 }
-
 .botao:hover {
     color: #fff;
     transition:5s;
