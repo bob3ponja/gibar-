@@ -21,11 +21,13 @@ const tempos = [
   tempoObjetivol, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4
 ]
 
-for (let i=0; i< contadores.length; i++){
-  contadores[i].textContent = calculaTempo (tempos[i]);
-  }
-  contadores[0].textContent = calculaTempo (tempoObjetivo1);
-  function calculaTempo(tempoObjetivo1){
+for (let i=0; i < contadores.length; i++){
+    contadores[i].textContent = calculaTempo(tempos[i]);
+}
+
+contadores[0].textContent = calculaTempo(tempoObjetivo1);
+
+function calculaTempo(tempoObjetivo1){
   let tempoAtual = new Date();
   let tempoFinal = tempoObjetivo1 - tempoAtual;
   let segundos = Math.floor(tempoFinal / 1000);
@@ -36,3 +38,4 @@ for (let i=0; i< contadores.length; i++){
   minutos %= 60;
   horas %= 24;
   return dias + "dias" + horas + "horas" + minutos + "minutos" + segundos + "segundos";
+}
