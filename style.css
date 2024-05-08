@@ -3,16 +3,16 @@
   @import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
 
   :root{
-    --branco: #FFFFFF;
-    --cor-de-fundo: #6FC9C0;
+    --branco: #272424;
+    --cor-de-fundo: #0c8108;
     --cor-rosa:
-    #C568CC;
+    #0a6302;
     --verde: #084A56;
-    --verde-claro: #6FC9C0;
+    --verde-claro: #1cb85d;
     --verde-limao:
-    #6FFF57;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
-    --botao-inativo: ☐ rgba(8, 74, 86, 0.5);
+    #538307;
+    --botao-inativo: rgb(15, 5, 107);
+    --botao-inativo:  rgb(6, 57, 66);
     }
     --botao-ativo: rgba(17, 209, 243, 0.795);
     body{
