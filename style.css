@@ -13,8 +13,9 @@
     #538307;
     --botao-inativo: rgb(15, 5, 107);
     --botao-inativo:  rgb(6, 57, 66);
+    --botao-ativo: rgba(6, 153, 25, 0.795);
     }
-    --botao-ativo: rgba(17, 209, 243, 0.795);
+    
     body{
     background-color: var(--cor-de-fundo);
     color: var(--branco);
@@ -40,7 +41,7 @@
 
 .botao{
     font-family: 'Chakra Petch', sans-serif;
-    color: #FFFF;
+    color: #a10505;
     display: flex;
     justify-content: center;
     padding: 1em;
