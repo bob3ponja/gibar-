@@ -22,12 +22,12 @@ const tempos = [
 ]
 
 for (let i=0; i < contadores.length; i++){
-    contadores[i].textContent = updateTimer(tempos[i]);
+    contadores[i].textContent = calculaTempo(tempos[i]);
 }
 
-contadores[0].textContent = updateTimer(tempoObjetivo1);
+contadores[0].textContent = calculaTempo(tempoObjetivo1);
 
-function updateTimer(tempoObjetivo1){
+function calculaTempo(tempoObjetivo1){
   let tempoAtual = new Date();
   let tempoFinal = tempoObjetivo1 - tempoAtual;
   let segundos = Math.floor(tempoFinal / 1000);
