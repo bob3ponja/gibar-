@@ -2,33 +2,25 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
 
-:root {
-    --cor-de-fundo:#1a5a00;
-    --amarelo-escuro:#07e907;
-    --parte-cabecalho:rgba(43, 255, 0, 0.5);
-    --ciano:rgba(24, 8, 245, 0.86);
-    --cor-relogio:rgb(7, 73, 214);
-    --cor-dia-hora:rgb(255, 251, 0);
-}
-
-body {
-    background: var(--cor-de-fundo);
-    margin: 0;
-    height: 100vh;
-  }
-
-.botao {
-    background: var(--amarelo-escuro);
-    font-family: 'Chakra Peth', sans-serif;
-    color: red;
-}
-
-.botao:hover {
-    background: var(--ciano);
-    
-}
-
-.conteudo-principal {
+  :root{
+    --branco: #FFFFFF;
+    --cor-de-fundo: #6FC9C0;
+    --cor-rosa:
+    #C568CC;
+    --verde: #084A56;
+    --verde-claro: #6FC9C0;
+    --verde-limao:
+    #6FFF57;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --botao-inativo: ☐ rgba(8, 74, 86, 0.5);
+    }
+    --botao-ativo: rgba(17, 209, 243, 0.795);
+    body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', 'Sans-Serif';
+    }
+    conteudo-principal{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,17 +28,15 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-}
-
-.titulo-principal {
+    }
+    .titulo-principal{
     text-align: left;
     width: 100%;
     font-size: 32px;
-}
-
-.titulo-principal span {
-    color: #1fcc0f;
-}
+    }
+    .titulo-principal span{
+    color: var(--verde-limao);
+    }
 
 .botao{
     font-family: 'Chakra Petch', sans-serif;
@@ -64,100 +54,50 @@ body {
     }
    
 .botao:first-child{
-    border-radius: 40px 40px 0 0
-    }
-
-    .botoes{
+   border-radius: 40px 40px 0 0;
+}
+.botoes{
     display: block;
+}
+
+.ativo{
+background-color: var(--botao-ativo);
+border-bottom: 4px solid var(--verde);
+}
+
+.abas-textos{
+background-color: var(--cor-de-fundo); padding: 40px;
+border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+display: block;
+}
+.aba-conteudo{
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+font-size: 28px;
+text-align: center;
+}
+
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--rosa);
     }
 
-    .ativo{
-         background-color: var(--botao-ativo);
-          border-bottom: 4px solid var(--verde);
-        }
-
-        .abas-textos{
-        background-color: var(--cor-de-fundo);
-        padding: 40px;
-        border-radius: 00 40px 40px;
-        }
-        .aba-conteudo.ativo{
-        display: block;
-        }
-        .aba-conteudo{
-        display: none;
-        }
-        .aba-conteudo-titulo-principal{
-        font-size: 28px;
-        text-align: center;
-        }
-        .aba-conteudo-titulo-secundario{
-        text-align: center;
-        color: var(--rosa);
-        text-transform: uppercase;
-        }
-
-
-@media screen and (min-width: 768px) {
+    contador{
+    text-align: center;
+    font-size: 20px;
+    }
+    @media screen and (min-width: 768px){
     .botoes{
     display: flex;
     }
-
-.botao:first-child{
-    border-radius: 40px 0 0 0
+    .botao:first-child{
+    border-radius: 40px 0 0 0;
     }
-    
-.botao:last-child{
-    border-radius: 0 40px 0 0;
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
     }
-}
-.botao:hover {
-    color: #fff;
-    transition:5s;
-        transition: opacity 100ms linear;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #0fa,
-        0 0 82px rgb(8, 160, 109),
-        0 0 92px rgb(0, 90, 60),
-        0 0 102px rgb(55, 185, 142),
-        0 0 151px #0fa;
-        
-  }
-
-  .titulo-principal{
-
-    font-family: "Shadows Into Light", cursive;
-  font-weight: 400;
-  font-style: normal;
-    background-image: linear-gradient(
-    -225deg,
-    #ff595e 0%,
-    #ffca3a 29%,
-    #8ac926 67%,
-    #1982c4 88%,
-    #6a4c93 100%
-
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 1s linear infinite;
-  display: inline-block;
-      font-size: 50px;
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
-
-
-
+    }
